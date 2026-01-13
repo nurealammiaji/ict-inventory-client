@@ -4,36 +4,36 @@ import { PiGear, PiHandArrowDown, PiHouse, PiLaptop } from "react-icons/pi";
 
 const Menu = () => {
     return (
-        <ul className="menu w-full grow">
+        <ul className="menu w-full grow *:my-2">
             {/* List item First */}
             <li>
                 <NavLink to={"/"} className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
-                    <PiHouse className='text-xl' />
-                    <span className="is-drawer-close:hidden">Homepage</span>
+                    <PiHouse className='text-4xl' />
+                    <span className="is-drawer-close:hidden text-lg font-semibold">Homepage</span>
                 </NavLink>
             </li>
 
-            {/* List item 2 */} 
+            {/* List item 2 */}
             <li>
                 <NavLink to={"/loan-register"} className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Loan Register">
-                    <PiHandArrowDown className='text-xl' />
-                    <span className="is-drawer-close:hidden">Loan Register</span>
+                    <PiHandArrowDown className='text-4xl' />
+                    <span className="is-drawer-close:hidden text-lg font-semibold">Loan Register</span>
                 </NavLink>
             </li>
 
             {/* List item 3 */}
             <li>
                 <NavLink to={"/laptop-register"} className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Laptop Register">
-                    <PiLaptop className='text-xl' />
-                    <span className="is-drawer-close:hidden">Laptop Register</span>
+                    <PiLaptop className='text-4xl' />
+                    <span className="is-drawer-close:hidden text-lg font-semibold">Laptop Register</span>
                 </NavLink>
             </li>
 
             {/* List item Last */}
             <li>
                 <NavLink to={"/settings"} className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Settings">
-                    <PiGear className='text-xl' />
-                    <span className="is-drawer-close:hidden">Settings</span>
+                    <PiGear className='text-4xl' />
+                    <span className="is-drawer-close:hidden text-lg font-semibold">Settings</span>
                 </NavLink>
             </li>
 

@@ -8,7 +8,7 @@ const Menu = () => {
             {/* List item First */}
             <li>
                 <NavLink to={"/"} className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
-                    <PiHouse className='text-lg' />
+                    <PiHouse className='text-xl' />
                     <span className="is-drawer-close:hidden">Homepage</span>
                 </NavLink>
             </li>
@@ -16,7 +16,7 @@ const Menu = () => {
             {/* List item 2 */} 
             <li>
                 <NavLink to={"/loan-register"} className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Loan Register">
-                    <PiHandArrowDown className='text-lg' />
+                    <PiHandArrowDown className='text-xl' />
                     <span className="is-drawer-close:hidden">Loan Register</span>
                 </NavLink>
             </li>
@@ -24,7 +24,7 @@ const Menu = () => {
             {/* List item 3 */}
             <li>
                 <NavLink to={"/laptop-register"} className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Laptop Register">
-                    <PiLaptop className='text-lg' />
+                    <PiLaptop className='text-xl' />
                     <span className="is-drawer-close:hidden">Laptop Register</span>
                 </NavLink>
             </li>
@@ -32,7 +32,7 @@ const Menu = () => {
             {/* List item Last */}
             <li>
                 <NavLink to={"/settings"} className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Settings">
-                    <PiGear className='text-lg' />
+                    <PiGear className='text-xl' />
                     <span className="is-drawer-close:hidden">Settings</span>
                 </NavLink>
             </li>

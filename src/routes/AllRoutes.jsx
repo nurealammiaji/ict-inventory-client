@@ -3,6 +3,8 @@ import App from '../App';
 import Home from "../pages/Home/Home";
 import Settings from "../pages/Settings/Settings";
 import ErrorBoundary from "../pages/Error/ErrorBoundary";
+import LoanRegister from "../pages/LoanRegister/LoanRegister";
+import LaptopRegister from "../pages/LaptopRegister/LaptopRegister";
 
 const AllRoutes = createBrowserRouter([
     {
@@ -13,6 +15,14 @@ const AllRoutes = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />
+            },
+            {
+                path: "/loan-register",
+                element: <LoanRegister />
+            },
+            {
+                path: "/laptop-register",
+                element: <LaptopRegister />
             },
             {
                 path: "/settings",

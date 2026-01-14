@@ -1,5 +1,6 @@
 import React from 'react';
 import { PiFilePlus, PiPlusSquare } from 'react-icons/pi';
+import LoanRegisterForm from '../../components/LoanRegisterForm/LoanRegisterForm';
 
 const LoanRegister = () => {
     return (
@@ -12,18 +13,18 @@ const LoanRegister = () => {
             <br />
             <div className='mt-14'>
                 <div>
-                    <button className="btn" onClick={() => document.getElementById('new_loan_register_modal').showModal()}><PiPlusSquare className='text-lg' />
-
-                        New Loan</button>
+                    <button className="btn btn-lg" onClick={() => document.getElementById('new_loan_register_modal').showModal()}><PiPlusSquare className='text-2xl mr-2' /> <span className='text-xl'>New Loan</span></button>
                     <dialog id="new_loan_register_modal" className="modal">
-                        <div className="modal-box">
+                        <div className="modal-box w-11/12 max-w-5xl">
                             <form method="dialog">
                                 {/* if there is a button in form, it will close the modal */}
                                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                             </form>
                             <h3 className="font-bold text-lg">New Loan</h3>
                             <div className='divider'></div>
-                            <p className="py-4">Press ESC key or click on ✕ button to close</p>
+                            <div className="py-4">
+                                <LoanRegisterForm />
+                            </div>
                         </div>
                     </dialog>
                 </div>

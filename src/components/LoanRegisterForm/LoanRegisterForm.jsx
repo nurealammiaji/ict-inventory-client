@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const LoanRegisterForm = () => {
 
     const [version, setVersion] = useState();
+    const notify = () => toast('Added Successfully !');
 
     const classesBV = [
         {
@@ -228,6 +230,7 @@ const LoanRegisterForm = () => {
         }
         console.log(student);
         document.getElementById("new_loan_register_modal").close();
+        notify();
     }
 
     return (

@@ -1,10 +1,12 @@
 import React from 'react';
 import { PiFilePlus, PiPlusSquare } from 'react-icons/pi';
 import LoanRegisterForm from '../../components/LoanRegisterForm/LoanRegisterForm';
+import { ToastContainer } from 'react-toastify';
 
 const LoanRegister = () => {
     return (
         <div>
+            <ToastContainer />
             <div>
                 <div className='divider w-1/2 mx-auto'>
                     <h2 className='text-xl font-semibold'>Loan Register</h2>

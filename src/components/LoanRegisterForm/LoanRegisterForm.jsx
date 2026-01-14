@@ -52,15 +52,15 @@ const LoanRegisterForm = () => {
         },
     ];
 
-    const sessions = [
+    const issuer = [
         {
             id: 1,
-            name: "2024"
+            name: "Cpl Kamrul"
         },
         {
             id: 2,
-            name: "2025"
-        }
+            name: "Sgt Al Amin"
+        },
     ];
 
     const versions = [
@@ -238,48 +238,28 @@ const LoanRegisterForm = () => {
             <form onSubmit={handleStudentAddForm} className="bg-base-200 border-base-300 rounded-box border p-4">
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                     <div className='w-full'>
-                        <label className="label">Student ID</label>
-                        <input type="text" name='studentID' className="input w-full" placeholder="type student id here" />
+                        <label className="label">Item's Name</label>
+                        <input type="text" name='itemsName' className="input w-full" placeholder="type student name here" />
                     </div>
                     <div className='w-full'>
-                        <label className="label">Student Name</label>
-                        <input type="text" name='studentName' className="input w-full" placeholder="type student name here" />
+                        <label className="label">Item's Serial</label>
+                        <input type="text" name='itemsSerial' className="input w-full" placeholder="type student name here" />
                     </div>
                     <div className='w-full'>
-                        <label className="label">Date of Birth</label>
-                        <input type="date" name='dob' className='input w-full' placeholder='type dob here' />
+                        <label className="label">Item's Quantity</label>
+                        <input type="text" name='itemsQuantity' className="input w-full" placeholder="type student name here" />
                     </div>
                     <div className='w-full'>
-                        <label className="label">Version</label>
-                        <select name='version' onChange={handleVersion} className='select w-full'>
-                            <option value="" className='text-slate-400'>select version</option>
-                            {
-                                (versions) &&
-                                versions.map((v, i) => <option key={i} value={v.name}>{v.name}</option>)
-                            }
-                        </select>
+                        <label className="label">Date of Issue</label>
+                        <input type="date" name='dateOfIssue' className='input w-full' placeholder='type dob here' />
                     </div>
                     <div className='w-full'>
-                        <label className="label">Class</label>
-                        <select name='studentClass' className='select w-full'>
-                            <option value="" className='text-slate-400'>select class</option>
-                            {
-                                (version && version === "English") &&
-                                classesEV.map((c, i) => <option key={i} value={c.name}>{c.name}</option>)
-                            }
-                            {
-                                (version && version === "Bangla") &&
-                                classesBV.map((c, i) => <option key={i} value={c.name}>{c.name}</option>)
-                            }
-                        </select>
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Session</label>
+                        <label className="label">Issued by</label>
                         <select name='session' className='select w-full'>
-                            <option value="" className='text-slate-400'>select session</option>
+                            <option value="" className='text-slate-400'>select issuer</option>
                             {
-                                (sessions) &&
-                                sessions.map((s, i) => <option key={i} value={s.name}>{s.name}</option>)
+                                (issuer) &&
+                                issuer.map((s, i) => <option key={i} value={s.name}>{s.name}</option>)
                             }
                         </select>
                     </div>
@@ -360,10 +340,6 @@ const LoanRegisterForm = () => {
                     <div className='w-full'>
                         <label className="label">Mother's Name</label>
                         <input name='mother' type="text" className="input w-full" placeholder="type mother's name here" />
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Guardian's Name</label>
-                        <input name='guardian' type="text" className="input w-full" placeholder="type guardian's name here" />
                     </div>
                     <div className='w-full'>
                         <label className='label'>Present Address</label>

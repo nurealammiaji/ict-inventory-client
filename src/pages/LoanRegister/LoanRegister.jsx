@@ -20,7 +20,7 @@ const LoanRegister = () => {
                         <div className="modal-box w-11/12 max-w-5xl">
                             <form method="dialog">
                                 {/* if there is a button in form, it will close the modal */}
-                                <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                <button className="btn btn-sm btn-circle btn-error btn-outline absolute right-2 top-2 tooltip tooltip-left" data-tip={"Close"}>✕</button>
                             </form>
                             <h3 className="font-bold text-lg">New Loan</h3>
                             <div className='divider'></div>

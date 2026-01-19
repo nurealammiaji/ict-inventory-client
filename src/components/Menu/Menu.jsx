@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { PiGear, PiHandArrowDown, PiHouse, PiLaptop } from "react-icons/pi";
+import { PiGear, PiHandArrowDown, PiHouse, PiLaptop, PiMagnifyingGlass, PiSticker } from "react-icons/pi";
 
 const Menu = () => {
     return (
@@ -33,6 +33,22 @@ const Menu = () => {
                     <NavLink to={"/laptop-register"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Laptop Register">
                         <PiLaptop className='text-4xl' />
                         <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Laptop Register</span>
+                    </NavLink>
+                </li>
+
+                {/* List item 4 */}
+                <li>
+                    <NavLink to={"/search-items"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Search Items">
+                        <PiMagnifyingGlass className='text-4xl' />
+                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Search Items</span>
+                    </NavLink>
+                </li>
+
+                {/* List item 5 */}
+                <li>
+                    <NavLink to={"/stickers"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Stickers">
+                        <PiSticker className='text-4xl' />
+                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Stickers</span>
                     </NavLink>
                 </li>
 

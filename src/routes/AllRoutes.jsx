@@ -5,6 +5,8 @@ import Home from "../pages/Home/Home";
 import LoanRegister from "../pages/LoanRegister/LoanRegister";
 import LaptopRegister from "../pages/LaptopRegister/LaptopRegister";
 import SettingsPanel from "../pages/Settings/SettingsPanel";
+import SearchItems from "../pages/SearchItems/SearchItems";
+import Stickers from "../pages/Stickers/Stickers";
 import Settings from "../pages/Settings/Settings";
 import Categories from "../pages/Settings/Categories/Categories";
 import Brands from "../pages/Settings/Brands/Brands";
@@ -27,6 +29,14 @@ const AllRoutes = createBrowserRouter([
             {
                 path: "/laptop-register",
                 element: <LaptopRegister />
+            },
+            {
+                path: "/search-items",
+                element: <SearchItems />
+            },
+            {
+                path: "/stickers",
+                element: <Stickers />
             },
             {
                 path: "/settings",

@@ -28,7 +28,7 @@ function App() {
 
         <div className="drawer-side is-drawer-close:overflow-visible">
           <label htmlFor="layout-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-          <div className="flex min-h-full flex-col items-start bg-base-200 is-drawer-close:w-24 is-drawer-open:w-72">
+          <div className="grid min-h-full flex-col items-start bg-base-200 is-drawer-close:w-24 is-drawer-open:w-72">
             {/* Sidebar content here */}
             <Menu />
           </div>

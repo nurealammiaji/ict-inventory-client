@@ -11,6 +11,9 @@ import Settings from "../pages/Settings/Settings";
 import Categories from "../pages/Settings/Categories/Categories";
 import Brands from "../pages/Settings/Brands/Brands";
 import Items from "../pages/Settings/Items/Items";
+import Suppliers from '../pages/Settings/Suppliers/Suppliers';
+import Consumers from "../pages/Settings/Consumers/Consumers";
+import Users from "../pages/Settings/Users/Users";
 
 const AllRoutes = createBrowserRouter([
     {
@@ -57,6 +60,18 @@ const AllRoutes = createBrowserRouter([
                     {
                         path: "/settings/items",
                         element: <Items />
+                    },
+                    {
+                        path: "/settings/suppliers",
+                        element: <Suppliers />
+                    },
+                    {
+                        path: "/settings/consumers",
+                        element: <Consumers />
+                    },
+                    {
+                        path: "/settings/users",
+                        element: <Users />
                     }
                 ]
             }

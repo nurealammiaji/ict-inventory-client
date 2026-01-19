@@ -13,7 +13,7 @@ const LaptopRegister = () => {
                 <br />
                 <div className='mt-14'>
                     <div>
-                        <button className="btn btn-lg" onClick={() => document.getElementById('new_laptop_register_modal').showModal()}><PiPlusSquare className='text-2xl mr-2' /><span className='text-xl'>New Laptop</span></button>
+                        <button className="btn btn-lg btn-info" onClick={() => document.getElementById('new_laptop_register_modal').showModal()}><PiPlusSquare className='text-2xl mr-2' /><span className='text-xl'>New Laptop</span></button>
                         <dialog id="new_laptop_register_modal" className="modal">
                             <div className="modal-box w-11/12 max-w-5xl">
                                 <form method="dialog">

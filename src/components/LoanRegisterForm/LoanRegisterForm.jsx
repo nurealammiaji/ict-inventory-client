@@ -6,51 +6,6 @@ const LoanRegisterForm = () => {
     const [version, setVersion] = useState();
     const notify = () => toast('Added Successfully !');
 
-    const classesBV = [
-        {
-            id: 1,
-            name: "One",
-        },
-        {
-            id: 2,
-            name: "Two",
-        },
-        {
-            id: 3,
-            name: "Three",
-        },
-        {
-            id: 4,
-            name: "Four",
-        },
-        {
-            id: 5,
-            name: "Five",
-        },
-    ];
-
-    const classesEV = [
-        {
-            id: 1,
-            name: "One EV",
-        },
-        {
-            id: 2,
-            name: "Two EV",
-        },
-        {
-            id: 3,
-            name: "Three EV",
-        },
-        {
-            id: 4,
-            name: "Four EV",
-        },
-        {
-            id: 5,
-            name: "Five EV",
-        },
-    ];
 
     const issuer = [
         {
@@ -63,34 +18,19 @@ const LoanRegisterForm = () => {
         },
     ];
 
-    const versions = [
+    const consumerTypes = [
         {
             id: 1,
-            name: "Bangla"
+            name: "CP"
         },
         {
             id: 2,
-            name: "English"
-        }
-    ];
-
-    const sections = [
-        {
-            id: 1,
-            name: "A"
-        },
-        {
-            id: 2,
-            name: "B"
+            name: "OCP"
         },
         {
             id: 3,
-            name: "C"
+            name: "DS"
         },
-        {
-            id: 4,
-            name: "D"
-        }
     ];
 
     const seats = [
@@ -238,6 +178,10 @@ const LoanRegisterForm = () => {
             <form onSubmit={handleStudentAddForm} className="bg-base-200 border-base-300 rounded-box border p-4">
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                     <div className='w-full'>
+                        <label className="label">Serial</label>
+                        <input type="text" name='itemsName' className="input w-full" placeholder="type student name here" />
+                    </div>
+                    <div className='w-full'>
                         <label className="label">Item's Name</label>
                         <input type="text" name='itemsName' className="input w-full" placeholder="type student name here" />
                     </div>
@@ -264,89 +208,43 @@ const LoanRegisterForm = () => {
                         </select>
                     </div>
                     <div className='w-full'>
-                        <label className="label">Section</label>
+                        <label className="label">Issued to</label>
                         <select name='section' className='select w-full'>
                             <option value="" className='text-slate-400'>select section</option>
                             {
-                                (sections) &&
-                                sections.map((s, i) => <option key={i} value={s.name}>{s.name}</option>)
+                                (consumerTypes) &&
+                                consumerTypes.map((c, i) => <option key={i} value={c.name}>{c.name}</option>)
                             }
                         </select>
                     </div>
                     <div className='w-full'>
-                        <label className="label">Seat</label>
-                        <select name='seat' className='select w-full'>
-                            <option value="" className='text-slate-400'>select seat</option>
-                            {
-                                (seats) &&
-                                seats.map((s, i) => <option key={i} value={s.name}>{s.name}</option>)
-                            }
-                        </select>
+                        <label className="label">Contact No</label>
+                        <input name='father' type="text" className="input w-full" placeholder="type contact no here" />
                     </div>
                     <div className='w-full'>
-                        <label className="label">Bed</label>
-                        <select name='bed' className='select w-full'>
-                            <option value="" className='text-slate-400'>select bed</option>
-                            {
-                                (beds) &&
-                                beds.map((b, i) => <option key={i} value={b.name}>{b.name}</option>)
-                            }
-                        </select>
+                        <label className="label">Date of Deposit</label>
+                        <input type="date" name='dateOfIssue' className='input w-full' placeholder='type dob here' />
                     </div>
                     <div className='w-full'>
-                        <label className="label">Favorite Breakfast</label>
-                        <select name='breakfast' className='select w-full'>
-                            <option value="" className='text-slate-400'>select breakfast</option>
-                            {
-                                (breakfast) &&
-                                breakfast.map((b, i) => <option key={i} value={b.name}>{b.name}</option>)
-                            }
-                        </select>
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Favorite Lunch</label>
-                        <select name='lunch' className='select w-full'>
-                            <option value="" className='text-slate-400'>select lunch</option>
-                            {
-                                (lunch) &&
-                                lunch.map((l, i) => <option key={i} value={l.name}>{l.name}</option>)
-                            }
-                        </select>
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Favorite Snacks</label>
-                        <select name='snacks' className='select w-full'>
-                            <option value="" className='text-slate-400'>select snacks</option>
-                            {
-                                (snacks) &&
-                                snacks.map((s, i) => <option key={i} value={s.name}>{s.name}</option>)
-                            }
-                        </select>
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Favorite Dinner</label>
-                        <select name='dinner' className='select w-full'>
-                            <option value="" className='text-slate-400'>select dinner</option>
-                            {
-                                (dinner) &&
-                                dinner.map((d, i) => <option key={i} value={d.name}>{d.name}</option>)
-                            }
-                        </select>
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Father's Name</label>
-                        <input name='father' type="text" className="input w-full" placeholder="type father's name here" />
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Mother's Name</label>
-                        <input name='mother' type="text" className="input w-full" placeholder="type mother's name here" />
-                    </div>
-                    <div className='w-full'>
-                        <label className='label'>Present Address</label>
+                        <label className='label'>Deposited by</label>
                         <textarea name='present' className='textarea w-full' placeholder='type address here'></textarea>
                     </div>
                     <div className='w-full'>
-                        <label className='label'>Permanent Address</label>
+                        <label className='label'>Item Condition</label>
+                        <textarea name='permanent' className='textarea w-full' placeholder='type address here'></textarea>
+                    </div>
+                    <div className='w-full'>
+                        <label className="label">Received by</label>
+                        <select name='session' className='select w-full'>
+                            <option value="" className='text-slate-400'>select issuer</option>
+                            {
+                                (issuer) &&
+                                issuer.map((s, i) => <option key={i} value={s.name}>{s.name}</option>)
+                            }
+                        </select>
+                    </div>
+                    <div className='w-full'>
+                        <label className='label'>Item Condition</label>
                         <textarea name='permanent' className='textarea w-full' placeholder='type address here'></textarea>
                     </div>
                 </div>

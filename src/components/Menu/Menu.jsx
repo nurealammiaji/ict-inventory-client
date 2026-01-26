@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { PiGear, PiHandArrowDown, PiHandDeposit, PiHouse, PiLaptop, PiMagnifyingGlass, PiPackage, PiSticker } from "react-icons/pi";
+import { PiGear, PiHandArrowDown, PiHandDeposit, PiHouse, PiMagnifyingGlass, PiPackage, PiSticker } from "react-icons/pi";
 
 const Menu = () => {
     return (

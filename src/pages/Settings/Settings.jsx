@@ -20,11 +20,11 @@ const Settings = () => {
         <Link to={"/settings/suppliers"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiTruck className='text-5xl' /><span className='text-2xl'>Suppliers</span></p>
         </Link>
-        <Link to={"/settings/conditions"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
-          <p className='flex items-center justify-center gap-5'><PiCheckSquareOffset className='text-5xl' /><span className='text-2xl'>Conditions</span></p>
-        </Link>
         <Link to={"/settings/locations"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiLockers className='text-5xl' /><span className='text-2xl'>Locations</span></p>
+        </Link>
+        <Link to={"/settings/conditions"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
+          <p className='flex items-center justify-center gap-5'><PiCheckSquareOffset className='text-5xl' /><span className='text-2xl'>Conditions</span></p>
         </Link>
         <Link to={"/settings/consumers"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiUsersThree className='text-5xl' /><span className='text-2xl'>Consumers</span></p>

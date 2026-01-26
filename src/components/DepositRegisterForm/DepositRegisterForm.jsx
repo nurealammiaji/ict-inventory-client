@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
-const LoanRegisterForm = () => {
+const DepositRegisterForm = () => {
 
     const [version, setVersion] = useState();
     const notify = () => toast('Added Successfully !');
@@ -72,10 +72,6 @@ const LoanRegisterForm = () => {
             <form onSubmit={handleStudentAddForm} className="bg-base-200 border-base-300 rounded-box border p-4">
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                     <div className='w-full'>
-                        <label className="label">Serial</label>
-                        <input type="text" name='itemsName' className="input w-full" placeholder="type student name here" />
-                    </div>
-                    <div className='w-full'>
                         <label className="label">Item's Name</label>
                         <input type="text" name='itemsName' className="input w-full" placeholder="type student name here" />
                     </div>
@@ -88,11 +84,23 @@ const LoanRegisterForm = () => {
                         <input type="text" name='itemsQuantity' className="input w-full" placeholder="type student name here" />
                     </div>
                     <div className='w-full'>
-                        <label className="label">Date of Issue</label>
+                        <label className="label">Contact No</label>
+                        <input name='father' type="text" className="input w-full" placeholder="type contact no here" />
+                    </div>
+                    <div className='w-full'>
+                        <label className="label">Date of Deposit</label>
                         <input type="date" name='dateOfIssue' className='input w-full' placeholder='type dob here' />
                     </div>
                     <div className='w-full'>
-                        <label className="label">Issued by</label>
+                        <label className="label">Deposited by</label>
+                        <input name='father' type="text" className="input w-full" placeholder="type contact no here" />
+                    </div>
+                    <div className='w-full'>
+                        <label className="label">Contact No</label>
+                        <input name='father' type="text" className="input w-full" placeholder="type contact no here" />
+                    </div>
+                    <div className='w-full'>
+                        <label className="label">Received by</label>
                         <select name='session' className='select w-full'>
                             <option value="" className='text-slate-400'>select issuer</option>
                             {
@@ -100,20 +108,6 @@ const LoanRegisterForm = () => {
                                 issuer.map((s, i) => <option key={i} value={s.name}>{s.name}</option>)
                             }
                         </select>
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Issued to</label>
-                        <select name='section' className='select w-full'>
-                            <option value="" className='text-slate-400'>select section</option>
-                            {
-                                (consumerTypes) &&
-                                consumerTypes.map((c, i) => <option key={i} value={c.name}>{c.name}</option>)
-                            }
-                        </select>
-                    </div>
-                    <div className='w-full'>
-                        <label className="label">Contact No</label>
-                        <input name='father' type="text" className="input w-full" placeholder="type contact no here" />
                     </div>
                     <div className='w-full'>
                         <label className='label'>Item's Condition</label>
@@ -132,4 +126,4 @@ const LoanRegisterForm = () => {
     );
 };
 
-export default LoanRegisterForm;
+export default DepositRegisterForm;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LaptopRegisterForm = () => {
+const Conditions = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const LaptopRegisterForm = () => {
     );
 };
 
-export default LaptopRegisterForm;
+export default Conditions;

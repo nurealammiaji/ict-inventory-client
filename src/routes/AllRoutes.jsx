@@ -5,16 +5,17 @@ import Home from "../pages/Home/Home";
 import Items from "../pages/Items/Items";
 import SearchItems from "../pages/SearchItems/SearchItems";
 import LoanRegister from "../pages/LoanRegister/LoanRegister";
-import LaptopRegister from "../pages/LaptopRegister/LaptopRegister";
+import DepositRegister from "../pages/DepositRegister/DepositRegister";
 import Stickers from "../pages/Stickers/Stickers";
 import SettingsPanel from "../pages/Settings/SettingsPanel";
 import Settings from "../pages/Settings/Settings";
 import Categories from "../pages/Settings/Categories/Categories";
 import Brands from "../pages/Settings/Brands/Brands";
 import Suppliers from '../pages/Settings/Suppliers/Suppliers';
+import Locations from "../pages/Settings/Locations/Locations";
+import Conditions from "../pages/Settings/Conditions/Conditions";
 import Consumers from "../pages/Settings/Consumers/Consumers";
 import Users from "../pages/Settings/Users/Users";
-import Locations from "../pages/Settings/Locations/Locations";
 
 const AllRoutes = createBrowserRouter([
     {
@@ -39,8 +40,8 @@ const AllRoutes = createBrowserRouter([
                 element: <LoanRegister />
             },
             {
-                path: "/laptop-register",
-                element: <LaptopRegister />
+                path: "/deposit-register",
+                element: <DepositRegister />
             },
             {
                 path: "/stickers",
@@ -69,6 +70,10 @@ const AllRoutes = createBrowserRouter([
                     {
                         path: "/settings/locations",
                         element: <Locations />
+                    },
+                    {
+                        path: "/settings/conditions",
+                        element: <Conditions />
                     },
                     {
                         path: "/settings/consumers",

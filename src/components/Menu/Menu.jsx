@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { PiGear, PiHandArrowDown, PiHouse, PiLaptop, PiMagnifyingGlass, PiPackage, PiSticker } from "react-icons/pi";
+import { PiGear, PiHandArrowDown, PiHandDeposit, PiHouse, PiLaptop, PiMagnifyingGlass, PiPackage, PiSticker } from "react-icons/pi";
 
 const Menu = () => {
     return (
@@ -47,9 +47,9 @@ const Menu = () => {
 
                 {/* List item 5 */}
                 <li>
-                    <NavLink to={"/laptop-register"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Laptop Register">
-                        <PiLaptop className='text-4xl' />
-                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Laptop Register</span>
+                    <NavLink to={"/deposit-register"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Deposit Register">
+                        <PiHandDeposit className='text-4xl' />
+                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Deposit Register</span>
                     </NavLink>
                 </li>
 

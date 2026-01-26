@@ -1,5 +1,5 @@
 import React from 'react'
-import { PiCirclesThreePlus, PiMedal, PiPackage, PiTruck, PiUsersDuotone, PiUsersFill, PiUsersThree } from 'react-icons/pi'
+import { PiCirclesThreePlus, PiMapPinArea, PiMedal, PiPackage, PiTruck, PiUsersDuotone, PiUsersFill, PiUsersThree } from 'react-icons/pi'
 import { Link } from 'react-router-dom';
 
 const Settings = () => {
@@ -23,6 +23,9 @@ const Settings = () => {
         </Link>
         <Link to={"/settings/suppliers"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiTruck className='text-5xl' /><span className='text-2xl'>Suppliers</span></p>
+        </Link>
+        <Link to={"/settings/locations"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
+          <p className='flex items-center justify-center gap-5'><PiMapPinArea className='text-5xl' /><span className='text-2xl'>Locations</span></p>
         </Link>
         <Link to={"/settings/consumers"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiUsersThree className='text-5xl' /><span className='text-2xl'>Consumers</span></p>

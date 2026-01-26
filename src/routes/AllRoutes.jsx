@@ -14,6 +14,7 @@ import Items from "../pages/Settings/Items/Items";
 import Suppliers from '../pages/Settings/Suppliers/Suppliers';
 import Consumers from "../pages/Settings/Consumers/Consumers";
 import Users from "../pages/Settings/Users/Users";
+import Locations from "../pages/Settings/Locations/Locations";
 
 const AllRoutes = createBrowserRouter([
     {
@@ -64,6 +65,10 @@ const AllRoutes = createBrowserRouter([
                     {
                         path: "/settings/suppliers",
                         element: <Suppliers />
+                    },
+                    {
+                        path: "/settings/locations",
+                        element: <Locations />
                     },
                     {
                         path: "/settings/consumers",

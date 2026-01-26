@@ -1,5 +1,5 @@
 import React from 'react'
-import { PiCirclesThreePlus, PiMapPinArea, PiMedal, PiPackage, PiTruck, PiUsersDuotone, PiUsersFill, PiUsersThree } from 'react-icons/pi'
+import { PiCheckSquareOffset, PiCirclesThreePlus, PiGridNine, PiLockers, PiMapPinArea, PiMedal, PiTruck, PiUsersDuotone, PiUsersThree } from 'react-icons/pi'
 import { Link } from 'react-router-dom';
 
 const Settings = () => {
@@ -10,7 +10,6 @@ const Settings = () => {
           <h2 className='text-xl font-semibold'>Settings</h2>
         </div>
       </div>
-      <br />
       <div className='grid grid-cols-3 gap-10 mt-14 w-[80%] mx-auto'>
         <Link to={"/settings/categories"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiCirclesThreePlus className='text-5xl' /> <span className='text-2xl'>Categories</span></p>
@@ -21,8 +20,11 @@ const Settings = () => {
         <Link to={"/settings/suppliers"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiTruck className='text-5xl' /><span className='text-2xl'>Suppliers</span></p>
         </Link>
+        <Link to={"/settings/conditions"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
+          <p className='flex items-center justify-center gap-5'><PiCheckSquareOffset className='text-5xl' /><span className='text-2xl'>Conditions</span></p>
+        </Link>
         <Link to={"/settings/locations"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
-          <p className='flex items-center justify-center gap-5'><PiMapPinArea className='text-5xl' /><span className='text-2xl'>Locations</span></p>
+          <p className='flex items-center justify-center gap-5'><PiLockers className='text-5xl' /><span className='text-2xl'>Locations</span></p>
         </Link>
         <Link to={"/settings/consumers"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiUsersThree className='text-5xl' /><span className='text-2xl'>Consumers</span></p>

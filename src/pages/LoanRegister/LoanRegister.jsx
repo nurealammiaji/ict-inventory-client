@@ -12,7 +12,6 @@ const LoanRegister = () => {
                     <h2 className='text-xl font-semibold'>Loan Register</h2>
                 </div>
             </div>
-            <br />
             <div className='mt-14'>
                 <div>
                     <button className="btn btn-lg btn-info" onClick={() => document.getElementById('new_loan_register_modal').showModal()}><PiPlusSquare className='text-2xl mr-2' /> <span className='text-xl'>New Loan</span></button>

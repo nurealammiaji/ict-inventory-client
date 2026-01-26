@@ -14,7 +14,7 @@ const Menu = () => {
                 <br />
                 {/* List item First */}
                 <li>
-                    <NavLink to={"/"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Homepage">
+                    <NavLink to={"/"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Home">
                         <PiHouse className='text-4xl' />
                         <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Home</span>
                     </NavLink>
@@ -22,7 +22,7 @@ const Menu = () => {
 
                 {/* List item 2 */}
                 <li>
-                    <NavLink to={"/items"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Items">
+                    <NavLink to={"/items"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="All Items">
                         <PiPackage className='text-4xl' />
                         <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">All Items</span>
                     </NavLink>

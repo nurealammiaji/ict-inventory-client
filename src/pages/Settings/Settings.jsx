@@ -18,9 +18,6 @@ const Settings = () => {
         <Link to={"/settings/brands"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiMedal className='text-5xl' /><span className='text-2xl'>Brands</span></p>
         </Link>
-        <Link to={"/settings/items"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
-          <p className='flex items-center justify-center gap-5'><PiPackage className='text-5xl' /><span className='text-2xl'>Items</span></p>
-        </Link>
         <Link to={"/settings/suppliers"} className='border p-5 rounded-lg hover:bg-info hover:text-white'>
           <p className='flex items-center justify-center gap-5'><PiTruck className='text-5xl' /><span className='text-2xl'>Suppliers</span></p>
         </Link>

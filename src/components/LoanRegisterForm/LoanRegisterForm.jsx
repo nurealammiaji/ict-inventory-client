@@ -33,112 +33,6 @@ const LoanRegisterForm = () => {
         },
     ];
 
-    const seats = [
-        {
-            id: 1,
-            name: "General"
-        },
-        {
-            id: 3,
-            name: "Standard"
-        },
-        {
-            id: 3,
-            name: "Premium"
-        },
-        {
-            id: 4,
-            name: "Deluxe"
-        }
-    ];
-
-    const beds = [
-        {
-            id: 1,
-            name: "Lower"
-        },
-        {
-            id: 2,
-            name: "Middle"
-        },
-        {
-            id: 3,
-            name: "Upper"
-        }
-    ];
-
-    const breakfast = [
-        {
-            id: 1,
-            name: "Parata + Bhaji"
-        },
-        {
-            id: 2,
-            name: "Parata + Egg Fry"
-        },
-        {
-            id: 3,
-            name: "Noddles"
-        },
-        {
-            id: 4,
-            name: "Khichuri"
-        }
-    ];
-
-    const lunch = [
-        {
-            id: 1,
-            name: "Rice + Egg"
-        },
-        {
-            id: 2,
-            name: "Rice + Chicken"
-        },
-        {
-            id: 3,
-            name: "Rice + Beef"
-        },
-        {
-            id: 4,
-            name: "Rice + Mutton"
-        }
-    ];
-
-    const snacks = [
-        {
-            id: 1,
-            name: "Cake"
-        },
-        {
-            id: 2,
-            name: "Puri"
-        },
-        {
-            id: 3,
-            name: "Egg"
-        }
-    ];
-
-    const dinner = [
-        {
-            id: 1,
-            name: "Rice + Vegetables"
-        },
-        {
-            id: 2,
-            name: "Rice + Chicken"
-        },
-        {
-            id: 3,
-            name: "Rice + Beef"
-        },
-        {
-            id: 4,
-            name: "Rice + Mutton"
-        }
-    ];
-
     const handleVersion = (e) => {
         e.preventDefault();
         console.log(e.target.value);
@@ -226,12 +120,12 @@ const LoanRegisterForm = () => {
                         <input type="date" name='dateOfIssue' className='input w-full' placeholder='type dob here' />
                     </div>
                     <div className='w-full'>
-                        <label className='label'>Deposited by</label>
-                        <textarea name='present' className='textarea w-full' placeholder='type address here'></textarea>
+                        <label className="label">Deposited by</label>
+                        <input name='father' type="text" className="input w-full" placeholder="type contact no here" />
                     </div>
                     <div className='w-full'>
-                        <label className='label'>Item Condition</label>
-                        <textarea name='permanent' className='textarea w-full' placeholder='type address here'></textarea>
+                        <label className="label">Contact No</label>
+                        <input name='father' type="text" className="input w-full" placeholder="type contact no here" />
                     </div>
                     <div className='w-full'>
                         <label className="label">Received by</label>
@@ -247,9 +141,13 @@ const LoanRegisterForm = () => {
                         <label className='label'>Item Condition</label>
                         <textarea name='permanent' className='textarea w-full' placeholder='type address here'></textarea>
                     </div>
+                    <div className='w-full'>
+                        <label className='label'>Remarks</label>
+                        <textarea name='permanent' className='textarea w-full' placeholder='type address here'></textarea>
+                    </div>
                 </div>
                 <div className='text-center mt-5'>
-                    <button type='submit' className='btn btn-primary'>Submit</button>
+                    <button type='submit' className='btn btn-primary w-full'>Submit</button>
                 </div>
             </form>
         </div>

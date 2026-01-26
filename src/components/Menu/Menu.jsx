@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { PiGear, PiHandArrowDown, PiHouse, PiLaptop, PiMagnifyingGlass, PiSticker } from "react-icons/pi";
+import { PiGear, PiHandArrowDown, PiHouse, PiLaptop, PiMagnifyingGlass, PiPackage, PiSticker } from "react-icons/pi";
 
 const Menu = () => {
     return (
@@ -16,27 +16,19 @@ const Menu = () => {
                 <li>
                     <NavLink to={"/"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Homepage">
                         <PiHouse className='text-4xl' />
-                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Homepage</span>
+                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Home</span>
                     </NavLink>
                 </li>
 
                 {/* List item 2 */}
                 <li>
-                    <NavLink to={"/loan-register"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Loan Register">
-                        <PiHandArrowDown className='text-4xl' />
-                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Loan Register</span>
+                    <NavLink to={"/items"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Items">
+                        <PiPackage className='text-4xl' />
+                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">All Items</span>
                     </NavLink>
                 </li>
 
                 {/* List item 3 */}
-                <li>
-                    <NavLink to={"/laptop-register"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Laptop Register">
-                        <PiLaptop className='text-4xl' />
-                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Laptop Register</span>
-                    </NavLink>
-                </li>
-
-                {/* List item 4 */}
                 <li>
                     <NavLink to={"/search-items"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Search Items">
                         <PiMagnifyingGlass className='text-4xl' />
@@ -44,7 +36,24 @@ const Menu = () => {
                     </NavLink>
                 </li>
 
+
+                {/* List item 4 */}
+                <li>
+                    <NavLink to={"/loan-register"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Loan Register">
+                        <PiHandArrowDown className='text-4xl' />
+                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Loan Register</span>
+                    </NavLink>
+                </li>
+
                 {/* List item 5 */}
+                <li>
+                    <NavLink to={"/laptop-register"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Laptop Register">
+                        <PiLaptop className='text-4xl' />
+                        <span className="ml-2 is-drawer-close:hidden text-xl font-semibold">Laptop Register</span>
+                    </NavLink>
+                </li>
+
+                {/* List item 6 */}
                 <li>
                     <NavLink to={"/stickers"} className={({ isActive }) => isActive ? 'bg-info text-white' : `is-drawer-close:tooltip is-drawer-close:tooltip-right`} data-tip="Stickers">
                         <PiSticker className='text-4xl' />

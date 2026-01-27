@@ -8,7 +8,13 @@ const Stickers = () => {
                     <h2 className='text-xl font-semibold'>Stickers</h2>
                 </div>
             </div>
-            <br />
+            <div className='mt-14 w-[80%] mx-auto flex justify-center'>
+                <div>
+                    <img
+                        className="mask mask-square"
+                        src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp" />
+                </div>
+            </div>
         </div>
     );
 };

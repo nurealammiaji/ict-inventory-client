@@ -17,7 +17,7 @@ function App() {
               {/* Sidebar toggle icon */}
               <TbLayoutSidebarLeftExpand className='text-warning text-2xl'/>
             </label>
-            <div className="px-4 text-2xl font-semibold">ICT Inventory</div>
+            <div className="px-4 text-2xl font-semibold">ICT Store Management</div>
           </nav>
           {/* Page content here */}
           <div className="p-4">

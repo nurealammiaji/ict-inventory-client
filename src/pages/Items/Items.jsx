@@ -4,6 +4,31 @@ import LoanRegisterForm from '../../components/LoanRegisterForm/LoanRegisterForm
 import { ToastContainer } from 'react-toastify';
 
 const Items = () => {
+
+  const Brands = [
+    { id: 1, name: 'Apple' },
+    { id: 2, name: 'Samsung' },
+    { id: 3, name: 'Dell' },
+    { id: 4, name: 'HP' },
+    { id: 5, name: 'Lenovo' },
+  ];
+
+  const locations = [
+    { id: 1, name: 'Rack 1' },
+    { id: 2, name: 'Rack 2' },
+    { id: 3, name: 'Rack 3' },
+    { id: 4, name: 'Store Floor' },
+    { id: 5, name: 'Room 1' },
+    { id: 6, name: 'Room 2' },
+  ];
+
+  const suppliers = [
+    { id: 4, name: 'TS Store', type: 'Internal' },
+    { id: 1, name: 'Star Tech', type: 'External' },
+    { id: 2, name: 'Ryans', type: 'External' },
+    { id: 3, name: 'Global Brand', type: 'External' },
+  ];
+
   return (
     <div>
       <ToastContainer />
